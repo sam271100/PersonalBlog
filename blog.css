@@ -26,8 +26,13 @@ p {
     margin: 0;
 }
 .img-circle {
-    border: 3px solid white;
+    border: 3px solid #dfdfdf;
     border-radius: 50%;
+}
+.img-circle:hover{
+    border: 3px solid white;
+    box-shadow: 0px 0px 8px black;
+
 }
 .section {
     background-color: #fff;
@@ -38,12 +43,17 @@ p {
 #header {
     background-image: url("header.jpg");
     background-size: cover;
+ 
 }
 #header img {
     display: block;
     width: 80px;
     height: 80px;
     margin: auto;
+}
+#header img:hover{
+    width: 85px;
+    height: 85px;
 }
 #header p {
     font-size: 25pt;
@@ -75,6 +85,10 @@ table, th, td {
 li {
     margin-bottom: 15px;
     font-weight: bold;
+}
+ul{
+  text-align: center;
+  list-style: none;  
 }
 progress {
     width: 70%;
@@ -118,7 +132,11 @@ form {
     font-weight: bold;
 }
 .submit:hover {
-    background-color: #43a09d;
+    background-color: white;
+    color: #3fb6b2;
+    border: 3px solid #3fb6b2;
+    padding: 9px 42px;
+    transition: 0.3s ease-out;
 }
 textarea {
     height: 100px;
@@ -127,12 +145,16 @@ input, textarea {
     margin-bottom: 10px;
     font-size: 11pt;
     padding: 15px 10px 10px;
-    border: 1px solid #cecece;
-    background-color: #efefef;
+    background: none;
+    border: none;
+    border-bottom: 2px solid #cecece;
     color: #787575;
     border-radius: 5px;
     width: 70%;
     outline: none;
+}
+input:hover, textarea:hover{
+    border-bottom: 4px solid #cecece;
 }
 .face {
     transform: scale(0.4);
@@ -140,6 +162,9 @@ input, textarea {
     display: block;
     margin-top: -35px;
     margin-bottom: -25px;
+}
+.face:hover{
+    transform: scale(0.5);
 }
 #contacts img {
     height: 50px;
@@ -151,6 +176,8 @@ input, textarea {
     text-decoration: none;
 }
 #contacts img:hover {
+    height: 55px;
+    width: 55px;
     opacity: 0.8;
 }
 #contacts {
@@ -159,6 +186,9 @@ input, textarea {
 .copyright {
     font-size: 8pt;
     text-align: right;
-    padding-bottom: 10px;
+    padding-bottom: 5   px;
     color: grey;
+}
+.copyright:hover{
+    color:black;
 }
